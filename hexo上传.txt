@@ -1,0 +1,14 @@
+命令行输入hexo g，此时Hexo会根据配置文件渲染出一套静态页面。
+完成后输入hexo d，此时会将之前渲染出的一系列文件上传至Github。
+Tips： 也可以直接输入hexo g -d直接完成渲染和上传。
+
+hexo new post "<post name>" # you can change post to another layout if you want
+hexo clean && hexo generate # generate the static file
+hexo server # run hexo in local environment
+hexo deploy # hexo will push the static files automatically into the specific branch(gh-pages) of your repo!
+
+hexo new post "<post name>" 
+hexo clean
+hexo g -d
+
+把本地图片上传到 https://sm.ms 这里，再把生成的链接粘贴到编辑器

@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head tag -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keyword"  content="">
+    <link rel="shortcut icon" href="/img/ironman-draw.png">
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <title>
+        
+          你们想要知道的跳一跳都在这了 - 城市噪声 | Blog
+        
+    </title>
+
+    <link rel="canonical" href="https://x-Long.github.io/article/jump/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS --> 
+    <link rel="stylesheet" href="/css/beantech.min.css">
+
+    <link rel="stylesheet" href="/css/donate.css">
+    
+    <!-- Pygments Highlight CSS -->
+    <link rel="stylesheet" href="/css/highlight.css">
+
+    <link rel="stylesheet" href="/css/widget.css">
+
+    <link rel="stylesheet" href="/css/rocket.css">
+
+    <link rel="stylesheet" href="/css/signature.css">
+
+    <link rel="stylesheet" href="/css/toc.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+	<!-- Modified by Yu-Hsuan Yen -->
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        
+            background-image: url('/img/header_img/1.png')
+            /*post*/
+        
+    }
+    
+</style>
+
+<header class="intro-header" >
+    <!-- Signature -->
+    <div id="signature">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                
+                    <div class="post-heading">
+                        <div class="tags">
+                            
+                              <a class="tag" href="/tags/#python" title="python">python</a>
+                            
+                        </div>
+                        <h1>你们想要知道的跳一跳都在这了</h1>
+                        <h2 class="subheading"></h2>
+                        <span class="meta">
+                            Posted by 城市噪声 on
+                            2018-01-08
+                        </span>
+                    </div>
+                
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+	
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">城市噪声</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+
+                    
+
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/about/">About</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/archive/">Archives</a>
+                        </li>
+                        
+                    
+
+                        
+                        <li>
+                            <a href="/tags/">Tags</a>
+                        </li>
+                        
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+    <!-- Main Content -->
+    <!-- Modify by Yu-Hsuan Yen -->
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <p><strong>许多老哥问我是不是开挂了，答案是：是的。。。</strong></p>
+<p>（今天打开CSDN看到写的最后一篇都是四月份了，竟然有一丝亲切的感觉…）</p>
+<p><strong>接下来，开始我们的表演。。。</strong></p>
+<p><strong>注：有些许基础的同学可以直接掠过本篇教程，直接按照以下步骤操作即可。</strong></p>
+<ul>
+<li><strong>Python环境配置</strong></li>
+<li><strong>安装adb工具</strong></li>
+<li><strong>Python与adb环境变量配置</strong></li>
+<li><strong>包依赖安装</strong></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; pip install -r requirements.txt</span><br><span class="line">&gt; pip install image</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>设备勾选开发者模式，连接为媒体设备</strong></li>
+<li><strong>编译文件：wechat_jump_auto.py</strong></li>
+</ul>
+<hr>
+<p>OK，接下来就是为小白同学精心准备的一系列细微的骚操作了，哈哈哈</p>
+<p>首先我们需要下载所需要用到的安装包以及源码，当然源码已经从大神的Github上挡下来了~</p>
+<p>**·  **<a href="https://pan.baidu.com/s/1skHFcLn" target="_blank" rel="noopener">文件打包点这里点这里~~，（密码 vu7g）</a></p>
+<p>为了之后对路径的操作更加便捷，我们可以在任意盘新建一个命名为Jumper的文件夹，并将文件下载解压后至内。</p>
+<p><img src="http://img.blog.csdn.net/20180108151656213?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写片描述"></p>
+<p>准备工作完成后，开始我们的配置工作。</p>
+<h3 id="一pythonampadb工具环境配置">一：Python&amp;adb工具环境配置</h3>
+<p>1，双击python的msi文件，进行安装</p>
+<p><img src="http://img.blog.csdn.net/20180108152342657?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br>
+<strong>注：一定要选择just for me ，否则pip包管理工具需要之后手动安装，非常不便。</strong></p>
+<p>选择安装路径时一定将其安装在我们刚刚新建的Jumper文件夹内，之后一路next就ok。</p>
+<p>2，安装完Python后在Jumper文件夹内解压如下文件，<br>
+<img src="http://img.blog.csdn.net/20180108153043383?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br>
+<em>注意右键选择解压至当前文件夹</em></p>
+<h3 id="二环境变量配置">二，环境变量配置</h3>
+<p><strong>操作步骤</strong>：右键-&gt;我的电脑-&gt; 属性-&gt; 高级系统设置-&gt; 环境变量-&gt; 系统变量 -&gt;双击Path<br>
+<img src="http://img.blog.csdn.net/20180108153555680?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p><img src="http://img.blog.csdn.net/20180108153611012?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>之后我们在弹出的模态框内添加进python以及adb文件夹的绝对路径，用英文状态下的分号隔开。<br>
+<img src="http://img.blog.csdn.net/20180108154008095?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p><em>这一步虽然简单，但一定要细心！一不小心删掉之前的东西就GG了，会造成很多意想不到的麻烦！</em></p>
+<p>到这里如果操作平稳的话，后边基本就没有大问题了。</p>
+<h3 id="三dos系统相关步骤">三，DOS系统相关步骤</h3>
+<p>1，如图输入以下命令，回车键确定。（windows+r 键入cmd）</p>
+<p><img src="http://img.blog.csdn.net/20180108154522609?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>为减少操作步骤，此版本python需移动pip文件，否则还需将Scripts文件夹配置至环境变量。</p>
+<p>2，pyhon与pip测试</p>
+<p>在DOS下分别键入python，adb与pip，若如下图所示则正常。否则返回环境变量配置部分检查问题。</p>
+<p><img src="http://img.blog.csdn.net/20180108154840082?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br>
+<img src="http://img.blog.csdn.net/20180108154859406?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>3，将路径切换至源码文件夹</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd /d F:\Jumper\wechat_jump_game-master</span><br></pre></td></tr></table></figure>
+<p>4，安装包依赖</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pip install image</span><br><span class="line">pip install -r requirements.txt</span><br></pre></td></tr></table></figure>
+<p><img src="http://img.blog.csdn.net/20180108155647187?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p><img src="http://img.blog.csdn.net/20180108155707685?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>安装过程相对较慢，一定要等到路径名出现后在进行相关命令键入，如红框线所示。</p>
+<p>另外在pip install image命令下可能会抛出如下异常，不用理会即可，只要不是fetal error ，按步骤操作即可。</p>
+<p><img src="http://img.blog.csdn.net/20180108155900362?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>5，手机勾选开发者模式，连接为媒体设备</p>
+<p>这一步大家就自行百度吧…<br>
+连接完成后打开微信跳一跳，开始游戏</p>
+<p>6，源码编译</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python wechat_jump_auto.py</span><br></pre></td></tr></table></figure>
+<p><img src="http://img.blog.csdn.net/20180108160208928?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p><strong>ok，看到下边的坐标检测了吗，没错，大功告成了，尽情的让他跳吧，哈哈哈</strong></p>
+<hr>
+<p>最后再说两句…</p>
+<p>记得刚开始的时候还需要手动调整相关参数，如图，现在大神已经将适配不同分辨率的系数写进配置文件里了，大家的福音，哈哈哈<br>
+<img src="http://img.blog.csdn.net/20180108161251059?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br>
+<img src="http://img.blog.csdn.net/20180108161302857?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>加油，尽量跳一个意义的数字，给某人看吧，哈哈哈~</p>
+<p>另外微信官方已经开始封号，如分数过高，很容易被封掉，舍友的两千多就被封了，分数不过一千应该没有多大问题，放心去跳吧。官方应该是以某个分数为阈值，根据阈值以上账号的日志文件检测异常，然后封号（八九不离十就是了）所以，大家一定见好就收。。。</p>
+<p>本篇内容许多命令都非常有用，之前写过一个简单用来快速启动记事本的bat文件，与本篇思路如出一辙，对于喜欢用电脑简记会议记录等工作非常有用，需要的私信，哈哈哈</p>
+<p>by 清月</p>
+
+                
+
+                <hr>
+                <!-- Pager -->
+                <ul class="pager">
+                    
+                    
+                        <li class="next">
+                            <a href="/article/JS解惑--闭包/" data-toggle="tooltip" data-placement="top" title="JS解惑--闭包">Next Post &rarr;</a>
+                        </li>
+                    
+                </ul>
+
+                <br>
+
+                <!--打赏-->
+                
+                <!--打赏-->
+
+                <br>
+                <!--分享-->
+                
+                <!--分享-->
+                <br>                       
+                
+                <!-- require APlayer -->
+                
+
+                <!-- duoshuo Share start -->
+                
+                <!-- 多说 Share end-->
+
+                <!-- 多说评论框 start -->
+                
+                <!-- 多说评论框 end -->
+
+                <!-- disqus comment start -->
+                
+                <!-- disqus comment end -->
+
+                
+
+            </div>
+            
+            <!-- Tabe of Content -->
+            <!-- Table of Contents -->
+
+  
+    
+      <aside id="sidebar">
+        <div id="toc" class="toc-article">
+        <strong class="toc-title">Contents</strong>
+        
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#一pythonampadb工具环境配置"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">&#x4E00;&#xFF1A;Python&amp;adb&#x5DE5;&#x5177;&#x73AF;&#x5883;&#x914D;&#x7F6E;</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#二环境变量配置"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">&#x4E8C;&#xFF0C;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x914D;&#x7F6E;</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#三dos系统相关步骤"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">&#x4E09;&#xFF0C;DOS&#x7CFB;&#x7EDF;&#x76F8;&#x5173;&#x6B65;&#x9AA4;</span></a></li></ol>
+        
+        </div>
+      </aside>
+    
+
+                
+            <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                       
+                          <a class="tag" href="/tags/#python" title="python">python</a>
+                        
+                    </div>
+                </section>
+                
+
+                <!-- Friends Blog -->
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'hover',
+          placement: 'left',
+          icon: 'ℬ'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
+
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                
+                
+                
+
+                
+
+                
+
+                
+
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; 城市噪声 2019
+                    <br>
+                    lemon
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-heart"></i>
+                    </span>
+
+
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js"></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!--
+     Because of the native support for backtick-style fenced code blocks
+     right within the Markdown is landed in Github Pages,
+     From V1.6, There is no need for Highlight.js,
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("https://x-Long.github.io/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+<script>
+    // dynamic User by Hux
+    var _gaId = 'UA-XXXXXXXX-X';
+    var _gaDomain = 'yoursite';
+
+    // Originial
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', _gaId, _gaDomain);
+    ga('send', 'pageview');
+</script>
+
+
+
+
+<!-- Baidu Tongji -->
+
+<script>
+    // dynamic User by Hux
+    var _baId = 'xxx';
+
+    // Originial
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?" + _baId;
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+
+
+
+
+	<a id="rocket" href="#top" class=""></a>
+	<script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+    <script type="text/javascript" src="/js/toc.js?v=1.0.0" async=""></script>
+<!-- Image to hack wechat -->
+<img src="https://x-Long.github.io/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>

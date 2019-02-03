@@ -14,11 +14,11 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <title>
         
-          About - 城市噪声 | Blog
+          JS解惑--原型与原型链 - 城市噪声 | Blog
         
     </title>
 
-    <link rel="canonical" href="https://x-Long.github.io/about/">
+    <link rel="canonical" href="https://x-Long.github.io/article/JS解惑--原型与原型链/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -71,8 +71,8 @@
 <style type="text/css">
     header.intro-header{
         
-            background-image: url('/img/header_img/1.png')
-            /*page*/
+            background-image: url('/img/article_header/archive-bg-lite.jpeg')
+            /*post*/
         
     }
     
@@ -85,10 +85,18 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 
-                    <div class="site-heading">
-                        <h1>About</h1>
-                        <!--<hr class="small">-->
-                        <span class="subheading">你是我的梦想</span>
+                    <div class="post-heading">
+                        <div class="tags">
+                            
+                              <a class="tag" href="/tags/#Javascript" title="Javascript">Javascript</a>
+                            
+                        </div>
+                        <h1>JS解惑--原型与原型链</h1>
+                        <h2 class="subheading"></h2>
+                        <span class="meta">
+                            Posted by 城市噪声 on
+                            2017-04-30
+                        </span>
                     </div>
                 
 
@@ -191,197 +199,174 @@
 
 
     <!-- Main Content -->
-    <!-- Main Content -->
-<div class="container">
-    <div class="row">
-        
+    <!-- Modify by Yu-Hsuan Yen -->
 
-<!-- USE SIDEBAR -->
-    <!-- Post Container -->
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Post Container -->
             <div class="
-                col-lg-8 col-lg-offset-1
-                col-md-8 col-md-offset-1
-                col-sm-12
-                col-xs-12
-                post-container
-            ">
-            
-                <h3 id="你好">你好</h3>
-<blockquote>
-<p>光有好奇心而不去實踐，等於自願放棄成功機會<br>
-別為自己畫地自限，Just Do It！！<br>
-如果你害怕失敗，那你真的可能會失敗！</p>
-</blockquote>
-<h3 id="联系我">联系我</h3>
-<blockquote>
-<p>Email: <a href="mailto:liang_xaut@163.com" target="_blank" rel="noopener">liang_xaut@163.com</a></p>
-</blockquote>
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
 
+                <p><strong>首先，我们需要明确一些概念</strong></p>
+<blockquote>
+<ul>
+<li>JavaScript 中，一切都可视为对象，但对象也是有区别的。分为普通对象和函数对象，Object ，Function 是JS自带的函数对象。</li>
+<li>原型对象： 在JavaScript 中，每当定义一个对象（函数）时候，对象中都会包含一些预定义的属性。其中函数对象的一个属性就是原型对象 prototype。</li>
+<li>注：普通对象没有prototype,但有__proto__属性。</li>
+<li>JS在创建对象（不论是普通对象还是函数对象）的时候，都有一个叫做__proto__的内置属性，用于指向创建它的函数对象的原型对象prototype。</li>
+<li>原型链： JS在创建对象（不论是普通对象还是函数对象）的时候，都有一个叫做__proto__的内置属性，用于指向创建它的函数对象的原型对象prototype。</li>
+</ul>
+</blockquote>
+<p>有了上面概念的基础，接下来我们由代码对概念加以理解</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">      function Person()&#123;</span><br><span class="line"></span><br><span class="line">      &#125;</span><br><span class="line">      Person.prototype.name = &quot;Nicholas&quot;;</span><br><span class="line">      Person.prototype.age = 29;</span><br><span class="line">      Person.prototype.job = &quot;Software Enginner&quot;;</span><br><span class="line">        Person.prototype.sayName = function()&#123;</span><br><span class="line">            alert(this.name);</span><br><span class="line">        &#125;;</span><br><span class="line"></span><br><span class="line">        var person1 = new Person();</span><br><span class="line">        person1.sayName();</span><br><span class="line"></span><br><span class="line">        var person2 = new Person();</span><br><span class="line">        person2.sayName();</span><br><span class="line"></span><br><span class="line">        alert(person1.sayName == person2.sayName);</span><br><span class="line">  &lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<p><img src="http://img.blog.csdn.net/20170430125025128?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<blockquote>
+<p>由上图，我们可以得出：对于对象的构造函数来说，它有一个prototype属性指向原型对象，原型对象有一个constructor属性指向构造函数；对原型对象我们可以任意添加属性和方法；对于对象的实例而言它有一个proto的内部属性它指向原型对象，从而原型对象的属性和方法都被实例对象所继承。</p>
+</blockquote>
+<p><strong>注：当我们为实例添加属性值的时候，实际上如果我们添加的属性与原型对象的属性相同时，我们添加的那个属性会屏蔽原型对象中的属性；如果我们为实例添加的属性与原型对象不相同，它只会给实例添加属性对应的值，</strong></p>
+<p><img src="http://img.blog.csdn.net/20170430125420242?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<blockquote>
+<p><strong>当我们需要查找属性或者方法时候，js解析器会先到实例中去找，如果有的话就返回实例中属性或者方法；如果没有就继续往沿着原型链往原型对象中找，找到就返回，如果再没找到就继续沿着原型链往上搜索，直到Object对象的原型。如下图</strong></p>
+</blockquote>
+<p><img src="http://img.blog.csdn.net/20170430125719683?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p><strong>看了以上文章，相信大家对原型与原型链有了进一步的了解。</strong></p>
+
+                
+
+                <hr>
+                <!-- Pager -->
+                <ul class="pager">
+                    
+                        <li class="previous">
+                            <a href="/article/JS解惑--闭包/" data-toggle="tooltip" data-placement="top" title="JS解惑--闭包">&larr; Previous Post</a>
+                        </li>
+                    
+                    
+                        <li class="next">
+                            <a href="/article/LoginPage的实现/" data-toggle="tooltip" data-placement="top" title="LoginPage的实现">Next Post &rarr;</a>
+                        </li>
+                    
+                </ul>
 
                 <br>
 
+                <!--打赏-->
+                
+                <!--打赏-->
+
+                <br>
+                <!--分享-->
+                
+                <!--分享-->
+                <br>                       
+                
                 <!-- require APlayer -->
                 
-                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.css">
-                    <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.js"></script>
-                    <script src="https://cdn.jsdelivr.net/npm/meting@1.2/dist/Meting.min.js"></script>
+
+                <!-- duoshuo Share start -->
                 
-                    <div class="aplayer"
-                        data-id="undefined"
-                        data-server="undefined"
-                        data-type="undefined"
-                        data-fixed="false" >
+                <!-- 多说 Share end-->
+
+                <!-- 多说评论框 start -->
+                
+                <!-- 多说评论框 end -->
+
+                <!-- disqus comment start -->
+                
+                <!-- disqus comment end -->
+
+                
+
+            </div>
+            
+            <!-- Tabe of Content -->
+            <!-- Table of Contents -->
+
+  
+    
+      <aside id="sidebar">
+        <div id="toc" class="toc-article">
+        <strong class="toc-title">Contents</strong>
+        
+          <ol class="nav">none</ol>
+        
+        </div>
+      </aside>
+    
+
+                
+            <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                       
+                          <a class="tag" href="/tags/#Javascript" title="Javascript">Javascript</a>
+                        
                     </div>
+                </section>
                 
 
-                <!-- 如果开启评论功能 -->
-                
-                    <hr>
-
-                    
-
-                    
-
-                    
-
-                    
-
-                    
-
-                    
-
+                <!-- Friends Blog -->
                 
             </div>
-
-          <!-- Sidebar Container -->
-<div class="
-    col-lg-3 col-lg-offset-0
-    col-md-3 col-md-offset-0
-    col-sm-12
-    col-xs-12
-    sidebar-container
-">
-    
-        <!-- Featured Tags -->
-
-<section>
-    <!-- no hr -->
-    <h5><a href="/tags/">FEATURED TAGS</a></h5>
-    <div class="tags">
-        
-            
-            <a href="/tags/#Javascript" title="Javascript" rel="2">Javascript</a>
-            
-        
-            
-            <a href="/tags/#Php" title="Php" rel="2">Php</a>
-            
-        
-            
-            <a href="/tags/#Jquery" title="Jquery" rel="2">Jquery</a>
-            
-        
-            
-            <a href="/tags/#Mysql" title="Mysql" rel="1">Mysql</a>
-            
-        
-            
-            <a href="/tags/#linux" title="linux" rel="1">linux</a>
-            
-        
-            
-            <a href="/tags/#python" title="python" rel="1">python</a>
-            
-        
+        </div>
     </div>
-</section>
+</article>
 
-        <hr>
-    
-        <!-- Short About -->
-<section class="visible-md visible-lg">
-    <h5><a href="/about/">ABOUT ME</a></h5>
-    <div class="short-about">
 
-        
-            <img id = "avatar_pic" src="/img/avatar/ironman.png" />
-        
 
-        
-            <p>Stay hungry,Stay foolish</p>
-        
 
-        <!-- SNS Link -->
-        <ul class="list-inline">
-            
-            
-            
 
-            
 
-            
 
-            
-            
-            
-            
-        </ul>
-    </div>
-</section>
 
-        <hr>
-    
-        
-  <h5>RECENT POSTS</h3>
-  <div class="widget">
-    <ul>
-      
-        <li>
-          <a href="/article/jump/">你们想要知道的跳一跳都在这了</a>
-        </li>
-      
-        <li>
-          <a href="/article/JS解惑--闭包/">JS解惑--闭包</a>
-        </li>
-      
-        <li>
-          <a href="/article/JS解惑--原型与原型链/">JS解惑--原型与原型链</a>
-        </li>
-      
-        <li>
-          <a href="/article/LoginPage的实现/">LoginPage的实现</a>
-        </li>
-      
-        <li>
-          <a href="/article/frontend-后台开发人员作业/">frontend-后台开发人员作业</a>
-        </li>
-      
-    </ul>
-  </div>
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'hover',
+          placement: 'left',
+          icon: 'ℬ'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
 
-        <hr>
-    
-        <!-- Friends Blog -->
-
-        <hr>
-    
-        
-    <h5>ARCHIVES</h5>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">April 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a><span class="archive-list-count">3</span></li></ul>
-    </div>
-
-        <hr>
-    
-        <!-- Categories -->
-
-        <hr>
-    
-</div>
-
-        
-    </div>
-</div>
 
 
     <!-- Footer -->

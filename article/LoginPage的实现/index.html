@@ -14,11 +14,11 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <title>
         
-          About - 城市噪声 | Blog
+          LoginPage的实现 - 城市噪声 | Blog
         
     </title>
 
-    <link rel="canonical" href="https://x-Long.github.io/about/">
+    <link rel="canonical" href="https://x-Long.github.io/article/LoginPage的实现/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -71,8 +71,8 @@
 <style type="text/css">
     header.intro-header{
         
-            background-image: url('/img/header_img/1.png')
-            /*page*/
+            background-image: url('/img/article_header/1.jpg')
+            /*post*/
         
     }
     
@@ -85,10 +85,22 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 
-                    <div class="site-heading">
-                        <h1>About</h1>
-                        <!--<hr class="small">-->
-                        <span class="subheading">你是我的梦想</span>
+                    <div class="post-heading">
+                        <div class="tags">
+                            
+                              <a class="tag" href="/tags/#Php" title="Php">Php</a>
+                            
+                              <a class="tag" href="/tags/#Jquery" title="Jquery">Jquery</a>
+                            
+                              <a class="tag" href="/tags/#Mysql" title="Mysql">Mysql</a>
+                            
+                        </div>
+                        <h1>LoginPage的实现</h1>
+                        <h2 class="subheading"></h2>
+                        <span class="meta">
+                            Posted by 城市噪声 on
+                            2017-03-31
+                        </span>
                     </div>
                 
 
@@ -191,197 +203,196 @@
 
 
     <!-- Main Content -->
-    <!-- Main Content -->
-<div class="container">
-    <div class="row">
-        
+    <!-- Modify by Yu-Hsuan Yen -->
 
-<!-- USE SIDEBAR -->
-    <!-- Post Container -->
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Post Container -->
             <div class="
-                col-lg-8 col-lg-offset-1
-                col-md-8 col-md-offset-1
-                col-sm-12
-                col-xs-12
-                post-container
-            ">
-            
-                <h3 id="你好">你好</h3>
-<blockquote>
-<p>光有好奇心而不去實踐，等於自願放棄成功機會<br>
-別為自己畫地自限，Just Do It！！<br>
-如果你害怕失敗，那你真的可能會失敗！</p>
-</blockquote>
-<h3 id="联系我">联系我</h3>
-<blockquote>
-<p>Email: <a href="mailto:liang_xaut@163.com" target="_blank" rel="noopener">liang_xaut@163.com</a></p>
-</blockquote>
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
 
+                <h2 id="loginpage的实现"><strong>LoginPage的实现</strong></h2>
+<p>本文git源码地址：<a href="https://github.com/x-Long/loginPage" target="_blank" rel="noopener">https://github.com/x-Long/loginPage</a></p>
+<hr>
+<blockquote>
+<p>作业原图如下：</p>
+<p><img src="http://img.blog.csdn.net/20170331222839646?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>作业完成后代码渲染后页面截图如下：</p>
+<p><img src="http://img.blog.csdn.net/20170331221523952?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+</blockquote>
+<hr>
+<blockquote>
+<p>布局部分代码如下：</p>
+<p><img src="http://img.blog.csdn.net/20170331221925095?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+</blockquote>
+<blockquote>
+<p>整体相对较为简单，主要涉及到的技术有背景精灵技术，盒子模型，定位，浮动等技术。在这里，我们可以为输入框绑定焦点事件函数以写入默认值，这样相较于给文本框设定value值更为灵活，随焦点所在位置而变化。详细实现过程见代码部分；</p>
+</blockquote>
+<hr>
+<blockquote>
+<p>整体实现起来相对抽象的可能就是login下方的小三角形，这个我们可以使用如下代码完成，理解起来可能相对抽象，需要对盒子模型有全局的理解，读者下去后可以查阅相关书籍。</p>
+<p><img src="http://img.blog.csdn.net/20170331223240647?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+</blockquote>
+<hr>
+<blockquote>
+<p>之后我们引入弹窗插件，仔细阅读完代码后，我们可以对其进行一定的修改，以带到我们想要的效果。</p>
+</blockquote>
+<blockquote>
+<p>输入错误账号密码后如图：</p>
+<p><img src="http://img.blog.csdn.net/20170331223733861?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>输入我们通过js（jq）绑定的账号密码后如图：</p>
+<p><img src="http://img.blog.csdn.net/20170331223842425?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>账号密码绑定部分实现代码如下：</p>
+<p><img src="http://img.blog.csdn.net/20170331224021651?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+</blockquote>
+<hr>
+<h2 id="参考全文实现代码见首行git链接">参考全文实现代码见首行git链接。</h2>
+<hr>
+<p>电子152<br>
+梁小龙<br>
+Thanks for reading！</p>
+<p>`</p>
+
+                
+
+                <hr>
+                <!-- Pager -->
+                <ul class="pager">
+                    
+                        <li class="previous">
+                            <a href="/article/JS解惑--原型与原型链/" data-toggle="tooltip" data-placement="top" title="JS解惑--原型与原型链">&larr; Previous Post</a>
+                        </li>
+                    
+                    
+                        <li class="next">
+                            <a href="/article/frontend-后台开发人员作业/" data-toggle="tooltip" data-placement="top" title="frontend-后台开发人员作业">Next Post &rarr;</a>
+                        </li>
+                    
+                </ul>
 
                 <br>
 
+                <!--打赏-->
+                
+                <!--打赏-->
+
+                <br>
+                <!--分享-->
+                
+                <!--分享-->
+                <br>                       
+                
                 <!-- require APlayer -->
                 
-                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.css">
-                    <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.js"></script>
-                    <script src="https://cdn.jsdelivr.net/npm/meting@1.2/dist/Meting.min.js"></script>
+
+                <!-- duoshuo Share start -->
                 
-                    <div class="aplayer"
-                        data-id="undefined"
-                        data-server="undefined"
-                        data-type="undefined"
-                        data-fixed="false" >
+                <!-- 多说 Share end-->
+
+                <!-- 多说评论框 start -->
+                
+                <!-- 多说评论框 end -->
+
+                <!-- disqus comment start -->
+                
+                <!-- disqus comment end -->
+
+                
+
+            </div>
+            
+            <!-- Tabe of Content -->
+            <!-- Table of Contents -->
+
+  
+    
+      <aside id="sidebar">
+        <div id="toc" class="toc-article">
+        <strong class="toc-title">Contents</strong>
+        
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#loginpage的实现"><span class="toc-nav-number">1.</span> <span class="toc-nav-text"><strong>LoginPage&#x7684;&#x5B9E;&#x73B0;</strong></span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#参考全文实现代码见首行git链接"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">&#x53C2;&#x8003;&#x5168;&#x6587;&#x5B9E;&#x73B0;&#x4EE3;&#x7801;&#x89C1;&#x9996;&#x884C;git&#x94FE;&#x63A5;&#x3002;</span></a></li></ol>
+        
+        </div>
+      </aside>
+    
+
+                
+            <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                       
+                          <a class="tag" href="/tags/#Php" title="Php">Php</a>
+                        
+                          <a class="tag" href="/tags/#Jquery" title="Jquery">Jquery</a>
+                        
+                          <a class="tag" href="/tags/#Mysql" title="Mysql">Mysql</a>
+                        
                     </div>
+                </section>
                 
 
-                <!-- 如果开启评论功能 -->
-                
-                    <hr>
-
-                    
-
-                    
-
-                    
-
-                    
-
-                    
-
-                    
-
+                <!-- Friends Blog -->
                 
             </div>
-
-          <!-- Sidebar Container -->
-<div class="
-    col-lg-3 col-lg-offset-0
-    col-md-3 col-md-offset-0
-    col-sm-12
-    col-xs-12
-    sidebar-container
-">
-    
-        <!-- Featured Tags -->
-
-<section>
-    <!-- no hr -->
-    <h5><a href="/tags/">FEATURED TAGS</a></h5>
-    <div class="tags">
-        
-            
-            <a href="/tags/#Javascript" title="Javascript" rel="2">Javascript</a>
-            
-        
-            
-            <a href="/tags/#Php" title="Php" rel="2">Php</a>
-            
-        
-            
-            <a href="/tags/#Jquery" title="Jquery" rel="2">Jquery</a>
-            
-        
-            
-            <a href="/tags/#Mysql" title="Mysql" rel="1">Mysql</a>
-            
-        
-            
-            <a href="/tags/#linux" title="linux" rel="1">linux</a>
-            
-        
-            
-            <a href="/tags/#python" title="python" rel="1">python</a>
-            
-        
+        </div>
     </div>
-</section>
+</article>
 
-        <hr>
-    
-        <!-- Short About -->
-<section class="visible-md visible-lg">
-    <h5><a href="/about/">ABOUT ME</a></h5>
-    <div class="short-about">
 
-        
-            <img id = "avatar_pic" src="/img/avatar/ironman.png" />
-        
 
-        
-            <p>Stay hungry,Stay foolish</p>
-        
 
-        <!-- SNS Link -->
-        <ul class="list-inline">
-            
-            
-            
 
-            
 
-            
 
-            
-            
-            
-            
-        </ul>
-    </div>
-</section>
 
-        <hr>
-    
-        
-  <h5>RECENT POSTS</h3>
-  <div class="widget">
-    <ul>
-      
-        <li>
-          <a href="/article/jump/">你们想要知道的跳一跳都在这了</a>
-        </li>
-      
-        <li>
-          <a href="/article/JS解惑--闭包/">JS解惑--闭包</a>
-        </li>
-      
-        <li>
-          <a href="/article/JS解惑--原型与原型链/">JS解惑--原型与原型链</a>
-        </li>
-      
-        <li>
-          <a href="/article/LoginPage的实现/">LoginPage的实现</a>
-        </li>
-      
-        <li>
-          <a href="/article/frontend-后台开发人员作业/">frontend-后台开发人员作业</a>
-        </li>
-      
-    </ul>
-  </div>
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'hover',
+          placement: 'left',
+          icon: 'ℬ'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
 
-        <hr>
-    
-        <!-- Friends Blog -->
-
-        <hr>
-    
-        
-    <h5>ARCHIVES</h5>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">April 2017</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a><span class="archive-list-count">3</span></li></ul>
-    </div>
-
-        <hr>
-    
-        <!-- Categories -->
-
-        <hr>
-    
-</div>
-
-        
-    </div>
-</div>
 
 
     <!-- Footer -->
