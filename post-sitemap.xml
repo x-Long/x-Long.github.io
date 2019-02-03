@@ -7,8 +7,16 @@
     </url>
 
     <url>
+        <loc>https://x-Long.github.io/article/hexo-theme-huweihuang1/</loc>
+        <lastmod>2019-02-03T06:49:24.544Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://x-Long.github.io/article/hexo-theme-huweihuang/</loc>
-        <lastmod>2019-02-03T02:56:31.518Z</lastmod>
+        <lastmod>2019-02-03T06:33:17.629Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -17,14 +25,6 @@
     <url>
         <loc>https://x-Long.github.io/article/hexo-theme-huweihuang%20-%20%E5%89%AF%E6%9C%AC/</loc>
         <lastmod>2019-02-02T18:29:17.739Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://x-Long.github.io/article/hexo-theme-huweihuang1/</loc>
-        <lastmod>2019-02-02T18:20:28.644Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

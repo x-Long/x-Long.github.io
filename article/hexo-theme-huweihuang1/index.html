@@ -14,7 +14,7 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <title>
         
-          [Hexo] 你好 - 梁小龙 | Blog
+          你好 - 城市噪声 | Blog
         
     </title>
 
@@ -91,10 +91,10 @@
                               <a class="tag" href="/tags/#Hexo" title="Hexo">Hexo</a>
                             
                         </div>
-                        <h1>[Hexo] 你好</h1>
+                        <h1>你好</h1>
                         <h2 class="subheading">This is hexo theme Demo.</h2>
                         <span class="meta">
-                            Posted by 梁小龙 on
+                            Posted by 城市噪声 on
                             2016-05-01
                         </span>
                     </div>
@@ -119,7 +119,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">梁小龙</a>
+            <a class="navbar-brand" href="/">城市噪声</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -212,58 +212,77 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-                <blockquote>
-<p>This HuWeihuang theme created by <a href="http://www.huweihuang.com/">HuWeihuang</a> modified from the original Porter <a href="https://github.com/YenYuHsuan/hexo-theme-beantech" target="_blank" rel="noopener">YuHsuan</a></p>
-</blockquote>
-<h1 id="live-demo">Live Demo</h1>
-<p>Hu Weihuang Blog : <a href="http://www.huweihuang.com/">www.huweihuang.com</a></p>
-<p><img src="http://img.huweihuang.com/blog.jpg" alt="Theme HuWeihuang"></p>
-<h1 id="install-hexo">Install Hexo</h1>
-<p>Install Node.js  and Git</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">For Mac</span></span><br><span class="line">brew install node</span><br><span class="line">brew install git</span><br></pre></td></tr></table></figure>
-<p>Install hexo</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash">For more:https://hexo.io/zh-cn/index.html</span></span><br></pre></td></tr></table></figure>
-<h1 id="theme-usage">Theme Usage</h1>
-<h2 id="init">Init</h2>
+                <p><strong>许多老哥问我是不是开挂了，答案是：是的。。。</strong></p>
+<p>（今天打开CSDN看到写的最后一篇都是四月份了，竟然有一丝亲切的感觉…）</p>
+<p><strong>接下来，开始我们的表演。。。</strong></p>
+<p>######<strong>注：有些许基础的同学可以直接掠过本篇教程，直接按照以下步骤操作即可。</strong></p>
+<ul>
+<li><strong>Python环境配置</strong></li>
+<li><strong>安装adb工具</strong></li>
+<li><strong>Python与adb环境变量配置</strong></li>
+<li><strong>包依赖安装</strong></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; pip install -r requirements.txt</span><br><span class="line">&gt; pip install image</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>设备勾选开发者模式，连接为媒体设备</strong></li>
+<li><strong>编译文件：wechat_jump_auto.py</strong></li>
+</ul>
 <hr>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/huweihuang/hexo-theme-huweihuang.git ./hexo-huweihuang</span><br><span class="line"><span class="built_in">cd</span> hexo-huweihuang</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
-<h2 id="modify">Modify</h2>
+<p>OK，接下来就是为小白同学精心准备的一系列细微的骚操作了，哈哈哈</p>
+<p>首先我们需要下载所需要用到的安装包以及源码，当然源码已经从大神的Github上挡下来了~</p>
+<p>**·  **<a href="https://pan.baidu.com/s/1skHFcLn" target="_blank" rel="noopener">文件打包点这里点这里~~，（密码 vu7g）</a></p>
+<p>为了之后对路径的操作更加便捷，我们可以在任意盘新建一个命名为Jumper的文件夹，并将文件下载解压后至内。</p>
+<p><img src="http://img.blog.csdn.net/20180108151656213?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写片描述"></p>
+<p>准备工作完成后，开始我们的配置工作。</p>
+<h3 id="一pythonampadb工具环境配置">一：Python&amp;adb工具环境配置</h3>
+<p>1，双击python的msi文件，进行安装</p>
+<p><img src="http://img.blog.csdn.net/20180108152342657?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br>
+<strong>注：一定要选择just for me ，否则pip包管理工具需要之后手动安装，非常不便。</strong></p>
+<p>选择安装路径时一定将其安装在我们刚刚新建的Jumper文件夹内，之后一路next就ok。</p>
+<p>2，安装完Python后在Jumper文件夹内解压如下文件，<br>
+<img src="http://img.blog.csdn.net/20180108153043383?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br>
+<em>注意右键选择解压至当前文件夹</em></p>
+<h3 id="二环境变量配置">二，环境变量配置</h3>
+<p><strong>操作步骤</strong>：右键-&gt;我的电脑-&gt; 属性-&gt; 高级系统设置-&gt; 环境变量-&gt; 系统变量 -&gt;双击Path<br>
+<img src="http://img.blog.csdn.net/20180108153555680?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p><img src="http://img.blog.csdn.net/20180108153611012?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>之后我们在弹出的模态框内添加进python以及adb文件夹的绝对路径，用英文状态下的分号隔开。<br>
+<img src="http://img.blog.csdn.net/20180108154008095?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p><em>这一步虽然简单，但一定要细心！一不小心删掉之前的东西就GG了，会造成很多意想不到的麻烦！</em></p>
+<p>到这里如果操作平稳的话，后边基本就没有大问题了。</p>
+<h3 id="三dos系统相关步骤">三，DOS系统相关步骤</h3>
+<p>1，如图输入以下命令，回车键确定。（windows+r 键入cmd）</p>
+<p><img src="http://img.blog.csdn.net/20180108154522609?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>为减少操作步骤，此版本python需移动pip文件，否则还需将Scripts文件夹配置至环境变量。</p>
+<p>2，pyhon与pip测试</p>
+<p>在DOS下分别键入python，adb与pip，若如下图所示则正常。否则返回环境变量配置部分检查问题。</p>
+<p><img src="http://img.blog.csdn.net/20180108154840082?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br>
+<img src="http://img.blog.csdn.net/20180108154859406?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>3，将路径切换至源码文件夹</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd /d F:\Jumper\wechat_jump_game-master</span><br></pre></td></tr></table></figure>
+<p>4，安装包依赖</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">pip install image</span><br><span class="line">pip install -r requirements.txt</span><br></pre></td></tr></table></figure>
+<p><img src="http://img.blog.csdn.net/20180108155647187?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p><img src="http://img.blog.csdn.net/20180108155707685?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>安装过程相对较慢，一定要等到路径名出现后在进行相关命令键入，如红框线所示。</p>
+<p>另外在pip install image命令下可能会抛出如下异常，不用理会即可，只要不是fetal error ，按步骤操作即可。</p>
+<p><img src="http://img.blog.csdn.net/20180108155900362?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>5，手机勾选开发者模式，连接为媒体设备</p>
+<p>这一步大家就自行百度吧…<br>
+连接完成后打开微信跳一跳，开始游戏</p>
+<p>6，源码编译</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python wechat_jump_auto.py</span><br></pre></td></tr></table></figure>
+<p><img src="http://img.blog.csdn.net/20180108160208928?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p><strong>ok，看到下边的坐标检测了吗，没错，大功告成了，尽情的让他跳吧，哈哈哈</strong></p>
 <hr>
-<p>Modify <code>_config.yml</code> file with your own info.<br>
-Especially the section:</p>
-<h3 id="deployment">Deployment</h3>
-<p>Replace to your own repo!</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">deploy:</span></span><br><span class="line"><span class="attr">  type:</span> <span class="string">git</span></span><br><span class="line"><span class="attr">  repo:</span> <span class="attr">https://github.com/&lt;yourAccount&gt;/&lt;repo&gt;</span></span><br><span class="line"><span class="attr">  branch:</span> <span class="string">&lt;your-branch&gt;</span></span><br></pre></td></tr></table></figure>
-<h3 id="sidebar-settings">Sidebar settings</h3>
-<p>Copy your avatar image to <code>&lt;root&gt;/img/</code> and modify the <code>_config.yml</code>:</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">sidebar:</span> <span class="literal">true</span>    <span class="comment"># whether or not using Sidebar.</span></span><br><span class="line"><span class="attr">sidebar-about-description:</span> <span class="string">"&lt;your description&gt;"</span></span><br><span class="line"><span class="attr">sidebar-avatar:</span> <span class="string">img/&lt;your</span> <span class="string">avatar</span> <span class="string">path&gt;</span></span><br></pre></td></tr></table></figure>
-<p>and activate your personal widget you like</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">widgets:</span>         <span class="comment"># here are widget you can use, you can comment out</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">featured-tags</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">short-about</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">recent-posts</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">friends-blog</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">archive</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">category</span></span><br></pre></td></tr></table></figure>
-<p>if you want to add sidebar widget, please add at <code>layout/_widget</code>.</p>
-<h3 id="signature-setup">Signature Setup</h3>
-<p>Copy your signature image to <code>&lt;root&gt;/img/signature</code> and modify the <code>_config.yml</code>:</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">signature:</span> <span class="literal">true</span>   <span class="comment"># show signature</span></span><br><span class="line"><span class="attr">signature-img:</span> <span class="string">img/signature/&lt;your-signature-ID&gt;</span></span><br></pre></td></tr></table></figure>
-<h3 id="go-to-top-icon-setup">Go to top icon Setup</h3>
-<p>My icon is using iron man, you can change to your own icon at <code>css/image</code>.</p>
-<h3 id="post-tag">Post tag</h3>
-<p>You can decide to show post tags or not.</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">home_posts_tag:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
-<p><img src="/img/article/tag.png" alt="home_posts_tag-true"></p>
-<h3 id="markdown-render">Markdown render</h3>
-<p>My markdown render engine plugin is <a href="https://github.com/celsomiranda/hexo-renderer-markdown-it" target="_blank" rel="noopener">hexo-renderer-markdown-it</a>.</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Markdown-it config</span></span><br><span class="line"><span class="comment">## Docs: https://github.com/celsomiranda/hexo-renderer-markdown-it/wiki</span></span><br><span class="line"><span class="attr">markdown:</span></span><br><span class="line"><span class="attr">  render:</span></span><br><span class="line"><span class="attr">    html:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">    xhtmlOut:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">    breaks:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">    linkify:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">    typographer:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">    quotes:</span> <span class="string">'“”‘’'</span></span><br></pre></td></tr></table></figure>
-<p>and if you want to change the header anchor ‘ℬ’, you can go to <code>layout/post.ejs</code> to change it.</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">async</span>(<span class="string">"https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js"</span>,<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">        anchors.options = &#123;</span><br><span class="line">          visible: <span class="string">'hover'</span>,</span><br><span class="line">          placement: <span class="string">'left'</span>,</span><br><span class="line">          icon: ℬ <span class="comment">// this is the header anchor "unicode" icon</span></span><br><span class="line">        &#125;;</span><br></pre></td></tr></table></figure>
-<h2 id="hexo-basics">Hexo Basics</h2>
-<hr>
-<p>Some hexo command:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo new post <span class="string">"&lt;post name&gt;"</span> <span class="comment"># you can change post to another layout if you want</span></span><br><span class="line">hexo clean &amp;&amp; hexo generate <span class="comment"># generate the static file</span></span><br><span class="line">hexo server <span class="comment"># run hexo in local environment</span></span><br><span class="line">hexo deploy <span class="comment"># hexo will push the static files automatically into the specific branch(gh-pages) of your repo!</span></span><br></pre></td></tr></table></figure>
-<h2 id="have-fun-_">Have fun ^_^</h2>
-<!-- Place this tag in your head or just before your close body tag. -->
-<script async defer src="https://buttons.github.io/buttons.js"></script>
-<!-- Place this tag where you want the button to render. -->
-<p>Please <a class="github-button" href="https://github.com/huweihuang/hexo-theme-huweihuang" data-icon="octicon-star" aria-label="Star huweihuang/hexo-theme-huweihuang on GitHub" target="_blank" rel="noopener">Star</a> this Project if you like it! <a class="github-button" href="https://github.com/huweihuang" aria-label="Follow @huweihuang on GitHub" target="_blank" rel="noopener">Follow</a> would also be appreciated!<br>
-Peace!</p>
+<p>最后再说两句…</p>
+<p>记得刚开始的时候还需要手动调整相关参数，如图，现在大神已经将适配不同分辨率的系数写进配置文件里了，大家的福音，哈哈哈<br>
+<img src="http://img.blog.csdn.net/20180108161251059?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"><br>
+<img src="http://img.blog.csdn.net/20180108161302857?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>加油，尽量跳一个意义的数字，给某人看吧，哈哈哈~</p>
+<p>另外微信官方已经开始封号，如分数过高，很容易被封掉，舍友的两千多就被封了，分数不过一千应该没有多大问题，放心去跳吧。官方应该是以某个分数为阈值，根据阈值以上账号的日志文件检测异常，然后封号（八九不离十就是了）所以，大家一定见好就收。。。</p>
+<p>本篇内容许多命令都非常有用，之前写过一个简单用来快速启动记事本的bat文件，与本篇思路如出一辙，对于喜欢用电脑简记会议记录等工作非常有用，需要的私信，哈哈哈</p>
+<p>by 清月</p>
 
                 
 
@@ -272,9 +291,13 @@ Peace!</p>
                 <ul class="pager">
                     
                         <li class="previous">
-                            <a href="/article/hexo-theme-huweihuang - 副本/" data-toggle="tooltip" data-placement="top" title="[Hexo] 你好">&larr; Previous Post</a>
+                            <a href="/article/hexo-theme-huweihuang/" data-toggle="tooltip" data-placement="top" title="111">&larr; Previous Post</a>
                         </li>
                     
+                    
+                        <li class="next">
+                            <a href="/article/hexo-theme-huweihuang - 副本/" data-toggle="tooltip" data-placement="top" title="[Hexo] 你好">Next Post &rarr;</a>
+                        </li>
                     
                 </ul>
 
@@ -318,7 +341,7 @@ Peace!</p>
         <div id="toc" class="toc-article">
         <strong class="toc-title">Contents</strong>
         
-          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#live-demo"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">Live Demo</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#install-hexo"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">Install Hexo</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#theme-usage"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">Theme Usage</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#init"><span class="toc-nav-number">3.1.</span> <span class="toc-nav-text">Init</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#modify"><span class="toc-nav-number">3.2.</span> <span class="toc-nav-text">Modify</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#deployment"><span class="toc-nav-number">3.2.1.</span> <span class="toc-nav-text">Deployment</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#sidebar-settings"><span class="toc-nav-number">3.2.2.</span> <span class="toc-nav-text">Sidebar settings</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#signature-setup"><span class="toc-nav-number">3.2.3.</span> <span class="toc-nav-text">Signature Setup</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#go-to-top-icon-setup"><span class="toc-nav-number">3.2.4.</span> <span class="toc-nav-text">Go to top icon Setup</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#post-tag"><span class="toc-nav-number">3.2.5.</span> <span class="toc-nav-text">Post tag</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#markdown-render"><span class="toc-nav-number">3.2.6.</span> <span class="toc-nav-text">Markdown render</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#hexo-basics"><span class="toc-nav-number">3.3.</span> <span class="toc-nav-text">Hexo Basics</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#have-fun-_"><span class="toc-nav-number">3.4.</span> <span class="toc-nav-text">Have fun ^_^</span></a></li></ol></li></ol>
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#一pythonampadb工具环境配置"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">&#x4E00;&#xFF1A;Python&amp;adb&#x5DE5;&#x5177;&#x73AF;&#x5883;&#x914D;&#x7F6E;</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#二环境变量配置"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">&#x4E8C;&#xFF0C;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x914D;&#x7F6E;</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#三dos系统相关步骤"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">&#x4E09;&#xFF0C;DOS&#x7CFB;&#x7EDF;&#x76F8;&#x5173;&#x6B65;&#x9AA4;</span></a></li></ol>
         
         </div>
       </aside>
@@ -415,7 +438,7 @@ Peace!</p>
 
                 </ul>
                 <p class="copyright text-muted">
-                    Copyright &copy; 梁小龙 2019 
+                    Copyright &copy; 城市噪声 2019 
                     <br>
                     Theme by <a href="http://beantech.org">BeanTech</a> 
                     <span style="display: inline-block; margin: 0 5px;">
