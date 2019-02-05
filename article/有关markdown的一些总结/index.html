@@ -14,11 +14,11 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <title>
         
-          一个注册、登陆系统的实现 - 城市噪声 | Blog
+          有关markdown的一些总结 - 城市噪声 | Blog
         
     </title>
 
-    <link rel="canonical" href="https://x-Long.github.io/article/一个注册、登陆系统的实现/">
+    <link rel="canonical" href="https://x-Long.github.io/article/有关markdown的一些总结/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -71,7 +71,7 @@
 <style type="text/css">
     header.intro-header{
         
-            background-image: url('/img/article_header/archive.jpg')
+            background-image: url('/img/article_header/1.jpg')
             /*post*/
         
     }
@@ -88,16 +88,14 @@
                     <div class="post-heading">
                         <div class="tags">
                             
-                              <a class="tag" href="/tags/#Php" title="Php">Php</a>
-                            
-                              <a class="tag" href="/tags/#Jquery" title="Jquery">Jquery</a>
+                              <a class="tag" href="/tags/#markdown" title="markdown">markdown</a>
                             
                         </div>
-                        <h1>一个注册、登陆系统的实现</h1>
+                        <h1>有关markdown的一些总结</h1>
                         <h2 class="subheading"></h2>
                         <span class="meta">
                             Posted by 城市噪声 on
-                            2017-03-08
+                            2016-05-21
                         </span>
                     </div>
                 
@@ -214,89 +212,91 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-                <p>#一个注册、登陆系统的实现</p>
-<hr>
+                <h1 id="一-标题定义">一、标题定义</h1>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 养成习惯，换行两个空格+回车</span><br><span class="line">## 分段两个回车，退出本段渲染</span><br><span class="line">### 嵌套列表中，嵌套一次，两个tab</span><br><span class="line">###### 一共六级标题</span><br></pre></td></tr></table></figure>
+<h1 id="养成习惯换行两个空格回车">养成习惯，换行两个空格+回车</h1>
+<h2 id="分段两个回车">分段两个回车</h2>
+<h3 id="分段就会分开渲染">分段就会分开渲染</h3>
+<h4 id="四级标题字体">四级标题字体</h4>
+<h1 id="二-字体格式">二、字体格式</h1>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">字体**加粗** 显示</span><br><span class="line">字体 *斜体* 显示</span><br><span class="line">字体 ***加粗并斜体*** 显示</span><br><span class="line">字体 ~~删除文本~~ 显示</span><br></pre></td></tr></table></figure>
+<p>字体<strong>加粗</strong> 显示<br>
+字体 <em>斜体</em> 显示<br>
+字体 <strong><em>加粗并斜体</em></strong> 显示<br>
+字体 <s>删除文本</s> 显示<br>
+<strong><em>此处与文本间不用加空格，其他都要加</em></strong></p>
+<h1 id="三-代码块定义">三、代码块定义</h1>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">~~~</span><br><span class="line">这里写代码 //这里需要注意，没有空行间隔，忽略降级引用标记</span><br><span class="line">这里写代码 ///四个~~~~包含代码块</span><br><span class="line">这里写代码</span><br><span class="line">~~~</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">这里写代码 //这里需要注意，没有空行间隔，忽略降级引用标记</span><br><span class="line">这里写代码</span><br><span class="line">这里写代码</span><br></pre></td></tr></table></figure>
+<h1 id="四-嵌套列表">四、嵌套列表</h1>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1. **我是一级序列**    //嵌套一次，两个tab</span><br><span class="line">1. **我是一级序列**</span><br><span class="line">    1. *我是二级序列*</span><br><span class="line">        1. *我是三级序列*</span><br></pre></td></tr></table></figure>
+<ol>
+<li><strong>我是一级序列</strong>    //嵌套一次，两个tab</li>
+<li><strong>我是一级序列</strong> //虽然列表写的是1，但会自动生成2
+<ol>
+<li><em>我是二级序列</em>
+<ol>
+<li><em>我是三级序列</em></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">* **我是一级序列**</span><br><span class="line">    * *我是二级序列*</span><br><span class="line">        * *我是三级序列*</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>我是一级序列</strong>
+<ul>
+<li><em>我是二级序列</em>
+<ul>
+<li><em>我是三级序列</em></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="五-嵌套引用">五、嵌套引用</h1>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt; 动物</span><br><span class="line">&gt;&gt; 水生动物</span><br><span class="line">&gt;&gt;&gt; 陆生动物</span><br></pre></td></tr></table></figure>
 <blockquote>
-<p>本文git源码链接<a href="https://github.com/x-Long/Web" target="_blank" rel="noopener">https://github.com/x-Long/Web</a></p>
-</blockquote>
-<p><strong><em>最终站点文件如图</em></strong></p>
-<p><img src="http://img.blog.csdn.net/20170307211110777?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt=""></p>
-<hr>
-<h2 id="注册及登录页面实现"><strong>注册及登录页面实现</strong></h2>
+<p>动物</p>
 <blockquote>
-<p>首先新建index.php文件，因为在Apache配置文件默认打开文件顺序中index.php优先级最高，这点读者可在Apache安装目录中打开php.ini找到相关配置项验证，并且可以进行必要修改。</p>
-</blockquote>
+<p>水生动物</p>
 <blockquote>
-<p>下面我们开始静态注册及登录窗口的实现：我们可以先为整个窗口加上一张背景图片，以突出整个页面的层次感，在这里可以参考下文代码，需要强调的是，我们所找到的图片可能尺寸并不能完全契合窗口，所以我们需要在相关样式文件中加入<code>background-size:cover;</code>这行代码，使背景图片可以完全自适应窗口。</p>
-<p>关于注册框与登陆框我们可以在form表单中放入一对table标签以完成主体布局，这种布局在表单页面实现中相对于传统div布局非常便捷实用，详细实现过程参照下文代码。在form表单中我们需要分别指定提交页面，并采用post提交方法，相关post与get方法提交的区别相对较为简单不在赘述，读者可以查阅相关资料自行了解。</p>
+<p>陆生动物</p>
 </blockquote>
-<p>另外，为了使读者对实现的过程一目了然，本站点文件并没有使用样式与html分离的写法，而是在头部嵌入。但在具体项目中还是希望大家本着分离的原则。</p>
-<blockquote></blockquote>
-<p>下面是布局部分代码（样式代码请于git源码站查看）：</p>
-<blockquote>
-<p><img src="http://img.blog.csdn.net/20170307221019182?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
-<p><img src="http://img.blog.csdn.net/20170307221221950?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
 </blockquote>
-<p><strong>实现效果如图所示</strong><br>
-<img src="http://img.blog.csdn.net/20170307212734139?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
-<blockquote></blockquote>
-<p><img src="http://img.blog.csdn.net/20170307212930848?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
-<hr>
-<h2 id="链接数据库文件的建立"><strong>链接数据库文件的建立</strong></h2>
-<blockquote>
-<p>前台注册页面表单提交过来的内容我们需要进行写入数据库操作，登陆时同样需要将填入内容与从数据库中取出的字段记录进行对比。可以说凡是与后台有动态交互的页面，我们都必要的需要链接数据库。所以我们可以建立一个connect.php的页面，然后在需要的页面通过include（）或require（）将其引入。</p>
 </blockquote>
-<blockquote>
-<p>include（）与require（）两者的用途是一样的，都是将文件引入，他们最根本的区别在于错误处理的方式不一样。 require一个文件存在错误的话，那么程序就会中断执行了，并显示fatalerror ，include一个文件存在错误的话，那么程序不会中端，而是继续执行，并显示一个warning。 关于两者的选择，我这里建议在一般情况下可以选择include（）。特殊情况需要综合考虑。</p>
-</blockquote>
-<p>链接数据库文件的代码如图</p>
-<blockquote>
-<p><img src="http://img.blog.csdn.net/20170307224407868?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
-</blockquote>
-<hr>
-<h2 id="注册与登录验证页面"><strong>注册与登录验证页面</strong></h2>
-<blockquote>
-<p>在数据库链接部分知识已经提到过，在完成前台的表单填写后需要将其提交给后台进行写入数据库或者对比判断的相关操作。验证页面主要相关的知识为数据库的增删改查，如对此部分知识读者不是太了解则需要先查阅掌握此部分知识。</p>
-<p>在注册验证页面，我们需要将前台提交过来的写入数据库，在这之前我们需要规划好相关的数据库,表,字段。然后我们可以将与数据库增删改查的对应sql语句赋给变量并传递给mysql_query（)，mysql_query（）是php操作数据库中必要最常用的语句之一。另外相关的验证还需要javascript/jquery的配合，因为站点与js验证相关的内容相对较少，所以也做嵌入页面处理，具体读者可以参照站点源码。</p>
-<p>关于登录验证页面的实现思想可以参考注册验证，此页面主要涉及的操作为将登录页面传来的username与passwod与数据库中已有的表记录对比，代码见下文图。在登录验证页面还涉及到一个非常重要的知识点：session会话管理。这部分内容在后文讲解。</p>
-</blockquote>
-<blockquote>
-<p>针对本教程，我们可以为其规划6个对应字段，分别为：id，username，password，email，phonenum，name。读者可以根据具体项目添加或删除字段。在这六个字段中，我这里着重强调id字段，在具体项目中，我们需要为必要每张表添加id字段，并设为主键自增，因为本站点只用到了一张表，但是在后期项目中必将涉及到多张表的关联，这样我们在为待关联表写入数据是即可将id值传给uid（这里不做强制规定）字段，以完成表之间的关联。</p>
-</blockquote>
-<p>注册登录验证页面代码如图</p>
-<blockquote>
-<p><img src="http://img.blog.csdn.net/20170307232601699?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
-</blockquote>
-<p><img src="http://img.blog.csdn.net/20170307232758352?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
-<hr>
-<h2 id="用户中心与相关验证页面"><strong>用户中心与相关验证页面</strong></h2>
-<blockquote>
-<p>这部分主要为从数据库中取出用户个人信息，并放入个人信息的静态页面中，这里出于代码分离的原则，我用了两个页面来完成，分别为my.php与home.php。在my.php中主要完成用户信息的查询，并将其赋给对应的session全局数组变量，设置好跳转链接后给home.php使用。</p>
-</blockquote>
-<blockquote>
-<p>session会话管理在上文已提到过一次，session现在主要被我们运用在登录验证上，与它对应的还有cookie，但是出于安全等因素（session存在服务器端，而cookie存在客户端）cookie并不常用，用session设置的数组变量可以用在站点目录相对路径的任何文件中，这也方便了实现个人信息页面时代码的分离，具体读者可以参照代码。这里还需要注意的是session的必须在文件的开头，用session_start()语句，并且一个文件中只能出现一次，要不会报错，这一点可能许多书中不会提及，但是读者需要注意，尤其是咋html中嵌入php代码时，比如home.php文件。因为home.php主要为静态实现的相关代码，与上文实现过程相似，这里不再贴出。</p>
-</blockquote>
-<p>my.php主要代码如图<br>
-	&gt;<img src="http://img.blog.csdn.net/20170308000237649?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
-<hr>
-<h2 id="注销退出页面"><strong>注销退出页面</strong></h2>
-<blockquote>
-<p>上文提到session主要被用来做登录验证，那么本页面（loginout.php）主要功能就是删除之前设置的session全局数组变量，以实现退出并跳转至登录页面重新登陆。</p>
-</blockquote>
-<blockquote>
-<p>loginout.php部分代码</p>
-<p><img src="http://img.blog.csdn.net/20170308001508910?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
-<p>个人信息页面如图所示</p>
-<p><img src="http://img.blog.csdn.net/20170308003042064?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
-</blockquote>
-<hr>
-<blockquote>
-<p>以上为注册登录页面全部内容，还有一些知识点如正则可能没有提到，后期继续完善。</p>
-</blockquote>
-<p>西安理工大学<br>
-电子152<br>
-梁小龙</p>
-<h2 id="thanks-for-reading">Thanks for reading.</h2>
+<h1 id="六-表格定义">六、表格定义</h1>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">| 左对齐      |  右对齐 | 居中 |</span><br><span class="line">| :- | -:| :-: |</span><br><span class="line">| Computer  | 5000 元 |  1台 |</span><br><span class="line">| Phone     | 1999 元 |  1部 |</span><br><span class="line">冒号 ：控制对齐</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">左对齐</th>
+<th style="text-align:right">右对齐</th>
+<th style="text-align:center">居中</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Computer</td>
+<td style="text-align:right">5000 元</td>
+<td style="text-align:center">1台</td>
+</tr>
+<tr>
+<td style="text-align:left">Phone</td>
+<td style="text-align:right">1999 元</td>
+<td style="text-align:center">1部</td>
+</tr>
+</tbody>
+</table>
+<h1 id="七-链接">七、链接</h1>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[首页](http://zhuzhuyule.xyz)</span><br><span class="line">[我的信息](/about/)</span><br><span class="line">[纪念册](https://love.zhuzhuyule.xyz/)</span><br></pre></td></tr></table></figure>
+<p><a href="http://zhuzhuyule.xyz" target="_blank" rel="noopener">首页</a><br>
+<a href="/about/">我的信息</a><br>
+<a href="https://love.zhuzhuyule.xyz/" target="_blank" rel="noopener">纪念册</a></p>
+<h1 id="八-引用图片">八、引用图片</h1>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![github](https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2581445340,2068113219&amp;fm=26&amp;gp=0.jpg)</span><br></pre></td></tr></table></figure>
+<p><img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2581445340,2068113219&amp;fm=26&amp;gp=0.jpg" alt="github"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">一些技巧：</span><br><span class="line">三个以上减号--- 分割线</span><br><span class="line">&lt;br&gt;换行，在表格中也可以实现换行</span><br></pre></td></tr></table></figure>
 
                 
 
@@ -305,13 +305,9 @@
                 <ul class="pager">
                     
                         <li class="previous">
-                            <a href="/article/frontend-后台开发人员作业/" data-toggle="tooltip" data-placement="top" title="frontend-后台开发人员作业">&larr; Previous Post</a>
+                            <a href="/article/一个注册、登陆系统的实现/" data-toggle="tooltip" data-placement="top" title="一个注册、登陆系统的实现">&larr; Previous Post</a>
                         </li>
                     
-                    
-                        <li class="next">
-                            <a href="/article/有关markdown的一些总结/" data-toggle="tooltip" data-placement="top" title="有关markdown的一些总结">Next Post &rarr;</a>
-                        </li>
                     
                 </ul>
 
@@ -355,7 +351,7 @@
         <div id="toc" class="toc-article">
         <strong class="toc-title">Contents</strong>
         
-          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#注册及登录页面实现"><span class="toc-nav-number">1.</span> <span class="toc-nav-text"><strong>&#x6CE8;&#x518C;&#x53CA;&#x767B;&#x5F55;&#x9875;&#x9762;&#x5B9E;&#x73B0;</strong></span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#链接数据库文件的建立"><span class="toc-nav-number">2.</span> <span class="toc-nav-text"><strong>&#x94FE;&#x63A5;&#x6570;&#x636E;&#x5E93;&#x6587;&#x4EF6;&#x7684;&#x5EFA;&#x7ACB;</strong></span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#注册与登录验证页面"><span class="toc-nav-number">3.</span> <span class="toc-nav-text"><strong>&#x6CE8;&#x518C;&#x4E0E;&#x767B;&#x5F55;&#x9A8C;&#x8BC1;&#x9875;&#x9762;</strong></span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#用户中心与相关验证页面"><span class="toc-nav-number">4.</span> <span class="toc-nav-text"><strong>&#x7528;&#x6237;&#x4E2D;&#x5FC3;&#x4E0E;&#x76F8;&#x5173;&#x9A8C;&#x8BC1;&#x9875;&#x9762;</strong></span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#注销退出页面"><span class="toc-nav-number">5.</span> <span class="toc-nav-text"><strong>&#x6CE8;&#x9500;&#x9000;&#x51FA;&#x9875;&#x9762;</strong></span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#thanks-for-reading"><span class="toc-nav-number">6.</span> <span class="toc-nav-text">Thanks for reading.</span></a></li></ol>
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#一-标题定义"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">&#x4E00;&#x3001;&#x6807;&#x9898;&#x5B9A;&#x4E49;</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#养成习惯换行两个空格回车"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">&#x517B;&#x6210;&#x4E60;&#x60EF;&#xFF0C;&#x6362;&#x884C;&#x4E24;&#x4E2A;&#x7A7A;&#x683C;+&#x56DE;&#x8F66;</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#分段两个回车"><span class="toc-nav-number">2.1.</span> <span class="toc-nav-text">&#x5206;&#x6BB5;&#x4E24;&#x4E2A;&#x56DE;&#x8F66;</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#分段就会分开渲染"><span class="toc-nav-number">2.1.1.</span> <span class="toc-nav-text">&#x5206;&#x6BB5;&#x5C31;&#x4F1A;&#x5206;&#x5F00;&#x6E32;&#x67D3;</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-4"><a class="toc-nav-link" href="#四级标题字体"><span class="toc-nav-number">2.1.1.1.</span> <span class="toc-nav-text">&#x56DB;&#x7EA7;&#x6807;&#x9898;&#x5B57;&#x4F53;</span></a></li></ol></li></ol></li></ol></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#二-字体格式"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">&#x4E8C;&#x3001;&#x5B57;&#x4F53;&#x683C;&#x5F0F;</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#三-代码块定义"><span class="toc-nav-number">4.</span> <span class="toc-nav-text">&#x4E09;&#x3001;&#x4EE3;&#x7801;&#x5757;&#x5B9A;&#x4E49;</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#四-嵌套列表"><span class="toc-nav-number">5.</span> <span class="toc-nav-text">&#x56DB;&#x3001;&#x5D4C;&#x5957;&#x5217;&#x8868;</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#五-嵌套引用"><span class="toc-nav-number">6.</span> <span class="toc-nav-text">&#x4E94;&#x3001;&#x5D4C;&#x5957;&#x5F15;&#x7528;</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#六-表格定义"><span class="toc-nav-number">7.</span> <span class="toc-nav-text">&#x516D;&#x3001;&#x8868;&#x683C;&#x5B9A;&#x4E49;</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#七-链接"><span class="toc-nav-number">8.</span> <span class="toc-nav-text">&#x4E03;&#x3001;&#x94FE;&#x63A5;</span></a></li><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#八-引用图片"><span class="toc-nav-number">9.</span> <span class="toc-nav-text">&#x516B;&#x3001;&#x5F15;&#x7528;&#x56FE;&#x7247;</span></a></li></ol>
         
         </div>
       </aside>
@@ -375,9 +371,7 @@
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
                        
-                          <a class="tag" href="/tags/#Php" title="Php">Php</a>
-                        
-                          <a class="tag" href="/tags/#Jquery" title="Jquery">Jquery</a>
+                          <a class="tag" href="/tags/#markdown" title="markdown">markdown</a>
                         
                     </div>
                 </section>
