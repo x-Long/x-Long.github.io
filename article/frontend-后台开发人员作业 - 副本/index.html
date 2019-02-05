@@ -14,11 +14,11 @@
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <title>
         
-          LoginPage的实现 - 城市噪声 | Blog
+          frontend-后台开发人员作业 - 城市噪声 | Blog
         
     </title>
 
-    <link rel="canonical" href="https://x-Long.github.io/article/LoginPage的实现/">
+    <link rel="canonical" href="https://x-Long.github.io/article/frontend-后台开发人员作业 - 副本/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -88,18 +88,14 @@
                     <div class="post-heading">
                         <div class="tags">
                             
-                              <a class="tag" href="/tags/#Php" title="Php">Php</a>
-                            
-                              <a class="tag" href="/tags/#Jquery" title="Jquery">Jquery</a>
-                            
-                              <a class="tag" href="/tags/#Mysql" title="Mysql">Mysql</a>
+                              <a class="tag" href="/tags/#linux" title="linux">linux</a>
                             
                         </div>
-                        <h1>LoginPage的实现</h1>
+                        <h1>frontend-后台开发人员作业</h1>
                         <h2 class="subheading"></h2>
                         <span class="meta">
                             Posted by 城市噪声 on
-                            2017-03-31
+                            2017-03-28
                         </span>
                     </div>
                 
@@ -216,47 +212,90 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-                <h2 id="loginpage的实现"><strong>LoginPage的实现</strong></h2>
-<p>本文git源码地址：<a href="https://github.com/x-Long/loginPage" target="_blank" rel="noopener">https://github.com/x-Long/loginPage</a></p>
+                <h1 id="后台开发人员作业"><em>后台开发人员作业</em></h1>
 <hr>
+<p>vfjfdgvksjv、</p>
 <blockquote>
-<p>作业原图如下：</p>
-<p><img src="http://img.blog.csdn.net/20170331222839646?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
-<p>作业完成后代码渲染后页面截图如下：</p>
-<p><img src="http://img.blog.csdn.net/20170331221523952?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
-</blockquote>
-<hr>
-<blockquote>
-<p>布局部分代码如下：</p>
-<p><img src="http://img.blog.csdn.net/20170331221925095?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>####<strong>必须用到以下几个文件:</strong></p>
 </blockquote>
 <blockquote>
-<p>整体相对较为简单，主要涉及到的技术有背景精灵技术，盒子模型，定位，浮动等技术。在这里，我们可以为输入框绑定焦点事件函数以写入默认值，这样相较于给文本框设定value值更为灵活，随焦点所在位置而变化。详细实现过程见代码部分；</p>
+<ul>
+<li><strong>msort.c  实现排序函数</strong></li>
+<li><strong>generate_data.h   声明随机数相关函数</strong></li>
+<li><strong>main.c     这个文件里不实现任何排序相关的内容</strong></li>
+<li><strong>generate_data.c   根据传入参数，产生指定数量的随机数</strong></li>
+<li><strong>msort.h  排序相关函数的声明 (可能还需要结构体的声明)</strong></li>
+<li><strong>test_generate_data.c  测试 generate_data.c 的所有函数</strong></li>
+<li><strong>test_msort.c  测试 msort.c 的所有函数</strong></li>
+<li><strong>Makefile   一键编译这个作业</strong></li>
+</ul>
+<p>####<strong>函数依赖：</strong></p>
+<ul>
+<li><strong>排序算法的时间复杂度应该为 nlog(n)</strong></li>
+<li><strong>排序时，不可以调用任何第三方排序函数</strong></li>
+</ul>
+<p>####<strong>文件保存在同一级目录下:</strong></p>
+<ul>
+<li><strong>msort目录</strong><br>
+ </li>
+</ul>
 </blockquote>
-<hr>
 <blockquote>
-<p>整体实现起来相对抽象的可能就是login下方的小三角形，这个我们可以使用如下代码完成，理解起来可能相对抽象，需要对盒子模型有全局的理解，读者下去后可以查阅相关书籍。</p>
-<p><img src="http://img.blog.csdn.net/20170331223240647?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
-</blockquote>
 <hr>
-<blockquote>
-<p>之后我们引入弹窗插件，仔细阅读完代码后，我们可以对其进行一定的修改，以带到我们想要的效果。</p>
 </blockquote>
 <blockquote>
-<p>输入错误账号密码后如图：</p>
-<p><img src="http://img.blog.csdn.net/20170331223733861?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
-<p>输入我们通过js（jq）绑定的账号密码后如图：</p>
-<p><img src="http://img.blog.csdn.net/20170331223842425?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
-<p>账号密码绑定部分实现代码如下：</p>
-<p><img src="http://img.blog.csdn.net/20170331224021651?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvbHhsNzEwNDUwMDUz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="这里写图片描述"></p>
+<p>###<strong>验收要求：</strong><br>
+####<strong>生成验收:</strong></p>
+<ul>
+<li><strong>在作业目录(msort)下：</strong></li>
+<li><strong>执行 make 命令，则生成 msort</strong></li>
+<li><strong>执行 make test, 则生成 test_msort</strong></li>
+<li><strong>执行 make clean, 则清空所有由 make 相关指令生成的文件</strong><br>
+ </li>
+</ul>
 </blockquote>
+<blockquote>
+<ul>
+<li><strong>执行验收：</strong></li>
+<li><strong>生成验收通过后，在作业目录(msort)下 执行 ./msort MAX_VALUE TOTAL_NUMS输出数据</strong></li>
+<li><strong>打印生成的随机数总数，随机数的最大值 TOTAL_NUMS, MAX_VALUE（独占一行</strong></li>
+<li><strong>打印生成的随机数， 每行规定显示为 10 个，每个数字之间以‘逗号’分开</strong></li>
+<li><strong>打印排序所耗费的时间 （独占一行）</strong></li>
+<li><strong>打印排序后的数字，显示格式与2相同</strong><br>
+ </li>
+<li><strong>测试验收：</strong></li>
+</ul>
+</blockquote>
+<blockquote>
+<ul>
+<li><strong>执行 ./test_msort</strong></li>
+<li><strong>依次次输出每个函数的‘声明’，然后是四个空格，接着 输出 OK 或者 FAILED</strong></li>
+<li><strong>OK 需要红色字体</strong></li>
+<li><strong>FAILED 需要绿色字体</strong></li>
+</ul>
+</blockquote>
+<blockquote>
 <hr>
-<h2 id="参考全文实现代码见首行git链接">参考全文实现代码见首行git链接。</h2>
+</blockquote>
+<blockquote>
+<p>###<strong>作业提交方式：</strong></p>
+</blockquote>
+<blockquote>
+<ul>
+<li><strong>代码放在 github</strong></li>
+<li><strong>截图与作业总结放在 blog</strong></li>
+<li><strong>博文第一行放置作业在 github 的地址</strong></li>
+<li><strong>通过邮箱发送 自己的作业</strong></li>
+<li><strong>邮件标题: 姓名-完成时间</strong></li>
+<li>**邮件正文：blog链接 **</li>
+<li><strong>随着作业的开展，每完成或者实现一定的功能，则进行提交</strong></li>
+<li><strong>提交时，注明必要的提交说明</strong></li>
+<li><strong>完成作业后，应该有不少于5次提交</strong></li>
+</ul>
+</blockquote>
+<blockquote>
 <hr>
-<p>电子152<br>
-梁小龙<br>
-Thanks for reading！</p>
-<p>`</p>
+</blockquote>
 
                 
 
@@ -265,12 +304,12 @@ Thanks for reading！</p>
                 <ul class="pager">
                     
                         <li class="previous">
-                            <a href="/article/JS解惑--原型与原型链/" data-toggle="tooltip" data-placement="top" title="JS解惑--原型与原型链">&larr; Previous Post</a>
+                            <a href="/article/LoginPage的实现/" data-toggle="tooltip" data-placement="top" title="LoginPage的实现">&larr; Previous Post</a>
                         </li>
                     
                     
                         <li class="next">
-                            <a href="/article/frontend-后台开发人员作业 - 副本/" data-toggle="tooltip" data-placement="top" title="frontend-后台开发人员作业">Next Post &rarr;</a>
+                            <a href="/article/frontend-后台开发人员作业/" data-toggle="tooltip" data-placement="top" title="frontend-后台开发人员作业">Next Post &rarr;</a>
                         </li>
                     
                 </ul>
@@ -315,7 +354,7 @@ Thanks for reading！</p>
         <div id="toc" class="toc-article">
         <strong class="toc-title">Contents</strong>
         
-          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#loginpage的实现"><span class="toc-nav-number">1.</span> <span class="toc-nav-text"><strong>LoginPage&#x7684;&#x5B9E;&#x73B0;</strong></span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#参考全文实现代码见首行git链接"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">&#x53C2;&#x8003;&#x5168;&#x6587;&#x5B9E;&#x73B0;&#x4EE3;&#x7801;&#x89C1;&#x9996;&#x884C;git&#x94FE;&#x63A5;&#x3002;</span></a></li></ol>
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#后台开发人员作业"><span class="toc-nav-number">1.</span> <span class="toc-nav-text"><em>&#x540E;&#x53F0;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x4F5C;&#x4E1A;</em></span></a></li></ol>
         
         </div>
       </aside>
@@ -335,11 +374,7 @@ Thanks for reading！</p>
                     <h5><a href="/tags/">FEATURED TAGS</a></h5>
                     <div class="tags">
                        
-                          <a class="tag" href="/tags/#Php" title="Php">Php</a>
-                        
-                          <a class="tag" href="/tags/#Jquery" title="Jquery">Jquery</a>
-                        
-                          <a class="tag" href="/tags/#Mysql" title="Mysql">Mysql</a>
+                          <a class="tag" href="/tags/#linux" title="linux">linux</a>
                         
                     </div>
                 </section>

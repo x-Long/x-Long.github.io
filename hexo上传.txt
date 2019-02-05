@@ -1,14 +1,14 @@
-ÃüÁîĞĞÊäÈëhexo g£¬´ËÊ±Hexo»á¸ù¾İÅäÖÃÎÄ¼şäÖÈ¾³öÒ»Ì×¾²Ì¬Ò³Ãæ¡£
-Íê³ÉºóÊäÈëhexo d£¬´ËÊ±»á½«Ö®Ç°äÖÈ¾³öµÄÒ»ÏµÁĞÎÄ¼şÉÏ´«ÖÁGithub¡£
-Tips£º Ò²¿ÉÒÔÖ±½ÓÊäÈëhexo g -dÖ±½ÓÍê³ÉäÖÈ¾ºÍÉÏ´«¡£
+å‘½ä»¤è¡Œè¾“å…¥hexo gï¼Œæ­¤æ—¶Hexoä¼šæ ¹æ®é…ç½®æ–‡ä»¶æ¸²æŸ“å‡ºä¸€å¥—é™æ€é¡µé¢ã€‚
+å®Œæˆåè¾“å…¥hexo dï¼Œæ­¤æ—¶ä¼šå°†ä¹‹å‰æ¸²æŸ“å‡ºçš„ä¸€ç³»åˆ—æ–‡ä»¶ä¸Šä¼ è‡³Githubã€‚
+Tipsï¼š ä¹Ÿå¯ä»¥ç›´æ¥è¾“å…¥hexo g -dç›´æ¥å®Œæˆæ¸²æŸ“å’Œä¸Šä¼ ã€‚
 
 hexo new post "<post name>" # you can change post to another layout if you want
 hexo clean && hexo generate # generate the static file
 hexo server # run hexo in local environment
 hexo deploy # hexo will push the static files automatically into the specific branch(gh-pages) of your repo!
 
-hexo new post "<post name>" 
+hexo new post "<post name>"
 hexo clean
 hexo g -d
 
-°Ñ±¾µØÍ¼Æ¬ÉÏ´«µ½ https://sm.ms ÕâÀï£¬ÔÙ°ÑÉú³ÉµÄÁ´½ÓÕ³Ìùµ½±à¼­Æ÷
+æŠŠæœ¬åœ°å›¾ç‰‡ä¸Šä¼ åˆ° https://sm.ms è¿™é‡Œï¼Œå†æŠŠç”Ÿæˆçš„é“¾æ¥ç²˜è´´åˆ°ç¼–è¾‘å™¨
