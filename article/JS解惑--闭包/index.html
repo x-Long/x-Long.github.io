@@ -212,7 +212,7 @@
                 col-md-10 col-md-offset-1
                 post-container">
 
-                <p>###<strong>一、变量的作用域</strong></p>
+                <h3 id="一-变量的作用域"><strong>一、变量的作用域</strong></h3>
 <hr>
 <blockquote>
 <p>要理解闭包，首先必须理解Javascript特殊的变量作用域。</p>
@@ -229,13 +229,13 @@
 </blockquote>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">    　　function f1()&#123;</span><br><span class="line">    　　　　n=999;</span><br><span class="line">    　　&#125;</span><br><span class="line"></span><br><span class="line">    　　f1();</span><br><span class="line"></span><br><span class="line">    　　alert(n); // 999</span><br></pre></td></tr></table></figure>
 <br>
-<p>###<strong>二、闭包的概念</strong></p>
+<h3 id="二-闭包的概念"><strong>二、闭包的概念</strong></h3>
 <hr>
 <blockquote>
 <p>闭包是指有权访问另一个函数作用域中的变量的函数，创建闭包的常见的方式，就是在一个函数内部创建另一个函数，通过另一个函数访问这个函数的局部变量。</p>
 </blockquote>
 <br>
-<p>###<strong>三、如何从外部读取局部变量</strong></p>
+<h3 id="三-如何从外部读取局部变量"><strong>三、如何从外部读取局部变量</strong></h3>
 <hr>
 <blockquote>
 <p>出于种种原因，我们有时候需要得到函数内的局部变量。但是，前面已经说过了，正常情况下，这是办不到的，只有通过变通方法才能实现。</p>
@@ -249,7 +249,7 @@ scope），子对象会一级一级地向上寻找所有父对象的变量。所
 </blockquote>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">    　　function f1()&#123;</span><br><span class="line"></span><br><span class="line">    　　　　var n=999;</span><br><span class="line"></span><br><span class="line">    　　　　function f2()&#123;</span><br><span class="line">    　　　　　　alert(n);</span><br><span class="line">    　　　　&#125;</span><br><span class="line"></span><br><span class="line">    　　　　return f2;</span><br><span class="line"></span><br><span class="line">    　　&#125;</span><br><span class="line"></span><br><span class="line">    　　var result=f1();</span><br><span class="line"></span><br><span class="line">    　　result(); // 999</span><br></pre></td></tr></table></figure>
 <br>
-###**四、闭包的用途**
+### **四、闭包的用途**
 <hr>
 <blockquote>
 <p>闭包可以用在许多地方。它的最大用处有两个，一个是前面提到的可以读取函数内部的变量，另一个就是让这些变量的值始终保持在内存中。</p>
@@ -264,7 +264,7 @@ collection）回收。</p>
 function），而这个匿名函数本身也是一个闭包，所以nAdd相当于是一个setter，可以在函数外部对函数内部的局部变量进行操作。</p>
 </blockquote>
 <br>
-###**五、使用闭包的注意点**
+### **五、使用闭包的注意点**
 <hr>
 <blockquote>
 <p>1）由于闭包会使得函数中的变量都被保存在内存中，内存消耗很大，所以不能滥用闭包，否则会造成网页的性能问题，在IE中可能导致内存泄露。解决方法是，在退出函数之前，将不使用的局部变量全部删除。<br>
@@ -333,7 +333,7 @@ function），而这个匿名函数本身也是一个闭包，所以nAdd相当�
         <div id="toc" class="toc-article">
         <strong class="toc-title">Contents</strong>
         
-          <ol class="nav">none</ol>
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#一-变量的作用域"><span class="toc-nav-number">1.</span> <span class="toc-nav-text"><strong>&#x4E00;&#x3001;&#x53D8;&#x91CF;&#x7684;&#x4F5C;&#x7528;&#x57DF;</strong></span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#二-闭包的概念"><span class="toc-nav-number">2.</span> <span class="toc-nav-text"><strong>&#x4E8C;&#x3001;&#x95ED;&#x5305;&#x7684;&#x6982;&#x5FF5;</strong></span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#三-如何从外部读取局部变量"><span class="toc-nav-number">3.</span> <span class="toc-nav-text"><strong>&#x4E09;&#x3001;&#x5982;&#x4F55;&#x4ECE;&#x5916;&#x90E8;&#x8BFB;&#x53D6;&#x5C40;&#x90E8;&#x53D8;&#x91CF;</strong></span></a></li></ol>
         
         </div>
       </aside>
