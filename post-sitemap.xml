@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>http://divecode.gitee.io/blog</loc>
+        <loc>http://divecode.top</loc>
         <changefreq>daily</changefreq>
         <priority>1</priority>
     </url>
 
     <url>
-        <loc>http://divecode.gitee.io/blog/article/Vim%E7%AE%80%E4%BB%8B%E4%B8%8E%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93/</loc>
+        <loc>http://divecode.top/article/Vim%E7%AE%80%E4%BB%8B%E4%B8%8E%E5%91%BD%E4%BB%A4%E6%80%BB%E7%BB%93/</loc>
         <lastmod>2019-02-10T09:20:22.600Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -15,7 +15,7 @@
     </url>
 
     <url>
-        <loc>http://divecode.gitee.io/blog/article/%E6%9C%89%E5%85%B3markdown%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%BB%E7%BB%93/</loc>
+        <loc>http://divecode.top/article/%E6%9C%89%E5%85%B3markdown%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%BB%E7%BB%93/</loc>
         <lastmod>2019-02-05T10:44:04.884Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -23,7 +23,7 @@
     </url>
 
     <url>
-        <loc>http://divecode.gitee.io/blog/article/jump/</loc>
+        <loc>http://divecode.top/article/jump/</loc>
         <lastmod>2019-02-03T16:30:55.121Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -31,7 +31,7 @@
     </url>
 
     <url>
-        <loc>http://divecode.gitee.io/blog/article/JS%E8%A7%A3%E6%83%91--%E5%8E%9F%E5%9E%8B%E4%B8%8E%E5%8E%9F%E5%9E%8B%E9%93%BE/</loc>
+        <loc>http://divecode.top/article/JS%E8%A7%A3%E6%83%91--%E5%8E%9F%E5%9E%8B%E4%B8%8E%E5%8E%9F%E5%9E%8B%E9%93%BE/</loc>
         <lastmod>2019-02-03T14:44:48.177Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -39,7 +39,7 @@
     </url>
 
     <url>
-        <loc>http://divecode.gitee.io/blog/article/JS%E8%A7%A3%E6%83%91--%E9%97%AD%E5%8C%85/</loc>
+        <loc>http://divecode.top/article/JS%E8%A7%A3%E6%83%91--%E9%97%AD%E5%8C%85/</loc>
         <lastmod>2019-02-03T14:39:09.580Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -47,7 +47,7 @@
     </url>
 
     <url>
-        <loc>http://divecode.gitee.io/blog/article/%E4%B8%80%E4%B8%AA%E6%B3%A8%E5%86%8C%E3%80%81%E7%99%BB%E9%99%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%AE%9E%E7%8E%B0/</loc>
+        <loc>http://divecode.top/article/%E4%B8%80%E4%B8%AA%E6%B3%A8%E5%86%8C%E3%80%81%E7%99%BB%E9%99%86%E7%B3%BB%E7%BB%9F%E7%9A%84%E5%AE%9E%E7%8E%B0/</loc>
         <lastmod>2019-02-03T14:34:22.828Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -55,7 +55,7 @@
     </url>
 
     <url>
-        <loc>http://divecode.gitee.io/blog/article/LoginPage%E7%9A%84%E5%AE%9E%E7%8E%B0/</loc>
+        <loc>http://divecode.top/article/LoginPage%E7%9A%84%E5%AE%9E%E7%8E%B0/</loc>
         <lastmod>2019-02-03T14:30:28.909Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -63,7 +63,7 @@
     </url>
 
     <url>
-        <loc>http://divecode.gitee.io/blog/article/frontend-%E5%90%8E%E5%8F%B0%E5%BC%80%E5%8F%91%E4%BA%BA%E5%91%98%E4%BD%9C%E4%B8%9A/</loc>
+        <loc>http://divecode.top/article/frontend-%E5%90%8E%E5%8F%B0%E5%BC%80%E5%8F%91%E4%BA%BA%E5%91%98%E4%BD%9C%E4%B8%9A/</loc>
         <lastmod>2019-02-03T14:26:47.358Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
