@@ -21,4 +21,6 @@ eval `ssh-agent -s`
 
 ssh-add ~/.ssh/id_rsa
 
+https://blog.csdn.net/EsonJohn/article/details/79134665
+
 复制这两行代码，运行即可（注意，要在./ssh的环境下）。
